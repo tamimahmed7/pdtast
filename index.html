@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="sass/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+</head>
+
+<body>
+    <div class="n-body">
+        <nav class="navbar">
+            <div class="n-content">
+                <div class="logo">
+                    <a href="#"></a>
+                </div>
+                <ul class="menu-list">
+                    <div class="icon cancel-btn">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="icon menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+    <script>
+        const body = document.querySelector("body");
+        const navbar = document.querySelector(".navbar");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+        menuBtn.onclick = () => {
+            navbar.classList.add("show");
+            menuBtn.classList.add("hide");
+            body.classList.add("disabled");
+        }
+        cancelBtn.onclick = () => {
+            body.classList.remove("disabled");
+            navbar.classList.remove("show");
+            menuBtn.classList.remove("hide");
+        }
+        window.onscroll = () => {
+            this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+        }
+    </script>
+
+
+
+
+
+
+    <div class="hero">
+
+        <div class="container hero-area">
+
+            <div class="hero-itame hero-itame1">
+                <h1 class=" h1 ">WEB TEMPLATES MARKETPLACE</h1>
+                <div class="search-box">
+                    <input type="text" class="search-text" placeholder="type to search..">
+                    <a href="#" class="searchbtn">
+                        <i class="fas fa-search"></i>
+                    </a>
+
+                </div>
+
+
+                <div class="hero-btns">
+
+
+
+
+                    <div class="hero-btn">
+                        <a href="" class="" style="text-decoration: none;color: #fff;">Free</a>
+                    </div>
+                    <div class="hero-btn">
+                        <a href=" " class="" style="text-decoration: none; color: #fff;">Premium</a>
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+            <div class=" hero-itame hero-itame2 ">
+
+                <img src="sass/IMG/web-development.png " width="100% " height="100% " alt=" ">
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="container catagory-con">
+        <div class="catagory-box catagory-box1"><img src="https://img.icons8.com/color/48/000000/wordpress.png " />
+            <p> WORDPRESS</p>
+        </div>
+        <div class="catagory-box catagory-box2"><img src="https://img.icons8.com/color/48/000000/adobe-xd--v1.png ">
+            <p>XD TEMPLETS</p>
+        </div>
+        <div class="catagory-box catagory-box3"> <img src="https://img.icons8.com/color/48/000000/figma--v1.png " />
+            <p>FIGMA TEMPLETS</p>
+        </div>
+        <div class="catagory-box catagory-box4"><img src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/48/000000/external-react-a-javascript-library-for-building-user-interfaces-logo-shadow-tal-revivo.png " />
+            <p>REACT TEMPLETS</p>
+        </div>
+
+    </div>
+
+
+
+    <div class="container catagory ">
+        <select style="width:150px; " class="form-select " aria-label="Default select example ">
+
+        <option selected>CATAGORY</option>
+        <option value="1 ">FREE</option>
+        <option value="2 ">PREMIUM</option>
+        <option value="3 ">REACT</option>
+        <option value="2 ">HTML</option>
+        <option value="3 ">FIGMA</option>
+        <option value="3 ">WORDPRESS</option>
+        <option value="3 ">XD</option>
+        
+    
+      </select>
+
+    </div>
+
+
+
+
+    <div class="p-wrapper container">
+
+        <div class="p-card">
+            <img src="images/headphone.png" alt="">
+            <div class="p-content">
+                <div class="p-row">
+                    <div class="details">
+                        <span>Headphone</span>
+                        <p>Premium headphone</p>
+                    </div>
+                    <div class="price">$30</div>
+                </div>
+                <div class="buttons">
+                    <button>Buy Now</button>
+                    <button class="cart-btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="p-card">
+            <img src="images/watch.png" alt="">
+            <div class="p-content">
+                <div class="p-row">
+                    <div class="details">
+                        <span>Apple Watch</span>
+                        <p>Premium digital watch</p>
+                    </div>
+                    <div class="price">$80</div>
+                </div>
+                <div class="buttons">
+                    <button>Buy Now</button>
+                    <button class="cart-btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="p-card">
+            <img src="images/airpods.png" alt="">
+            <div class="p-content">
+                <div class="p-row">
+                    <div class="details">
+                        <span>Apple Airpod</span>
+                        <p>Premium black airpod</p>
+                    </div>
+                    <div class="price">$50</div>
+                </div>
+                <div class="buttons">
+                    <button>Buy Now</button>
+                    <button class="cart-btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="p-card">
+            <img src="images/headphone.png" alt="">
+            <div class="p-content">
+                <div class="p-row">
+                    <div class="details">
+                        <span>Headphone</span>
+                        <p>Premium headphone</p>
+                    </div>
+                    <div class="price">$30</div>
+                </div>
+                <div class="buttons">
+                    <button>Buy Now</button>
+                    <button class="cart-btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="p-card">
+            <img src="images/watch.png" alt="">
+            <div class="p-content">
+                <div class="p-row">
+                    <div class="details">
+                        <span>Apple Watch</span>
+                        <p>Premium digital watch</p>
+                    </div>
+                    <div class="price">$80</div>
+                </div>
+                <div class="buttons">
+                    <button>Buy Now</button>
+                    <button class="cart-btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="p-card">
+            <img src="images/airpods.png" alt="">
+            <div class="p-content">
+                <div class="p-row">
+                    <div class="details">
+                        <span>Apple Airpod</span>
+                        <p>Premium black airpod</p>
+                    </div>
+                    <div class="price">$50</div>
+                </div>
+                <div class="buttons">
+                    <button>Buy Now</button>
+                    <button class="cart-btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- 
+
+    <div style="margin-top: 30px; margin-bottom:50px; " class="container ">
+
+
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 ">
+            <div class="col ">
+                <div class="card h-100 ">
+                    <img src="sass/IMG/canvas.jpg " class="card-img-top " alt="... ">
+                    <div class="card-body ">
+                        <h5 class="card-title ">CANVAS</h5>
+                        <p class="card-text ">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col ">
+                <div class="card h-100 ">
+                    <img src="sass/IMG/digigram.jpg " class="card-img-top " alt="... ">
+                    <div class="card-body ">
+                        <h5 class="card-title ">DIGIGRAM</h5>
+                        <p class="card-text ">This is a short card.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col ">
+                <div class="card h-100 ">
+                    <img src="sass/IMG/jof.jpg " class="card-img-top " alt="... ">
+                    <div class="card-body ">
+                        <h5 class="card-title ">GOF</h5>
+                        <p class="card-text ">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col ">
+                <div class="card h-100 ">
+                    <img src="sass/IMG/speed.jpg " class="card-img-top " alt="... ">
+                    <div class="card-body ">
+                        <h5 class="card-title ">SPEED</h5>
+                        <p class="card-text ">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col ">
+                <div class="card h-100 ">
+                    <img src="sass/IMG/savory.jpg " class="card-img-top " alt="... ">
+                    <div class="card-body ">
+                        <h5 class="card-title ">SAVORY</h5>
+                        <p class="card-text ">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col ">
+                <div class="card h-100 ">
+                    <img src="sass/IMG/minecraft-project.jpg " class="card-img-top " alt="... ">
+                    <div class="card-body ">
+                        <h5 class="card-title ">MINICRAFT</h5>
+                        <p class="card-text ">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    -->
+</body>
+
+</html>

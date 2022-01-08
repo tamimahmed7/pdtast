@@ -1,0 +1,115 @@
+<div class="waves">
+    <svg width="100%" height="200px" fill="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+      <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#00B4DB" />
+        <stop offset="50%" stop-color="#224488" />
+        <stop offset="100%" stop-color="#0083B0" />
+      </linearGradient>
+      <path 
+        fill="url(#grad1)" 
+        d="
+          M0 67
+          C 273,183
+            822,-40
+            1920.00,106 
+          
+          V 359 
+          H 0 
+          V 67
+          Z">
+        <animate 
+          repeatCount="indefinite" 
+          fill="url(#grad1)" 
+          attributeName="d" 
+          dur="15s"
+          attributeType="XML"
+          values="
+            M0 77 
+            C 473,283
+              822,-40
+              1920,116 
+            
+            V 359 
+            H 0 
+            V 67 
+            Z; 
+
+            M0 77 
+            C 473,-40
+              1222,283
+              1920,136 
+            
+            V 359 
+            H 0 
+            V 67 
+            Z; 
+
+            M0 77 
+            C 973,260
+              1722,-53
+              1920,120 
+            
+            V 359 
+            H 0 
+            V 67 
+            Z; 
+
+            M0 77 
+            C 473,283
+              822,-40
+              1920,116 
+            
+            V 359 
+            H 0 
+            V 67 
+            Z
+            ">
+        </animate>
+      </path>
+    </svg>
+</div>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid ">
+            <a class="navbar-brand logo" href="#">Navbar</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">PREMIUM</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class=" nav-link" href="#">FREE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">THEMES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CONTRACT</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+  
+                            nav {
+                                position: fixed;
+                            }
+                            
+                            nav a {
+                                font-size: 12px;
+                                font-weight: bold;
+                                margin-right: 50px;
+                            }
+                            
